@@ -27,29 +27,34 @@ class QuickSort {
         arr[i] = arr[j];
         arr[j] = temp;
     }
+    int partition( int low, int high) {
 
-    int partition(int[] array, int low, int high) {
+        int pivot = array[low];
+        int i = low+1;
+        int j = high+1;
 
-        int pivot = array[high];
-        int i = (low - 1);
+        while( i < j ){
+            do i++;
+            while ( pivot >= array[i] );
 
-        for(int j = low; j <= high - 1; j++) {
+            do j--;
+            while( pivot < array[j] );
 
-            if (array[j] < pivot) {
-                i++;
-                swap(array, i, j);
+            if( i < j ){
+                swap( array, i, j);
             }
         }
-        swap(array, i + 1, high);
-        return (i + 1);
+
+        swap(array, low, j);
+        return j;
     }
 
-    void quicksort(int[] arr, int low, int high) {
+    void quicksort( int low, int high) {
         if (low < high) {
-            int pi = partition(arr, low, high);
+            int pi = partition( low, high);
 
-            quicksort(arr, low, pi - 1);
-            quicksort(arr, pi + 1, high);
+            quicksort( low, pi - 1);
+            quicksort(pi + 1, high);
         }
     }
 
@@ -68,7 +73,7 @@ public class QuickSortAlgo {
 
         long start = System.currentTimeMillis();
 
-        quickSort.quicksort(quickSort.array, 0, quickSort.size - 1);
+        quickSort.quicksort(0, quickSort.size - 1);
 
         long end = System.currentTimeMillis();
 

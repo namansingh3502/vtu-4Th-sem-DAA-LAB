@@ -22,8 +22,11 @@ public class Main {
         //array e = new array();
         //e.driver();
 
-        QuickSortAlgo f = new QuickSortAlgo();
-        f.QuickSortMain();
+        //QuickSortAlgo f = new QuickSortAlgo();
+        //f.QuickSortMain();
+
+        //KnapsackAlgo g = new KnapsackAlgo();
+        //g.KnapsackMain();
 
 
 
