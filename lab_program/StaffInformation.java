@@ -30,7 +30,7 @@ class Teaching extends Staff{
     private String domain;
     private String publications;
 
-    Teaching(){
+    public Teaching(){
         this.read_basic();
         System.out.println("Enter Domain, Publication respectively");
         Scanner input = new Scanner( System.in );
@@ -48,7 +48,7 @@ class Teaching extends Staff{
 class Technical extends Staff{
     private String skills;
 
-    Technical(){
+    public Technical(){
         this.read_basic();
         System.out.println("Enter Skill respectively");
         Scanner input = new Scanner( System.in );
@@ -65,7 +65,7 @@ class Technical extends Staff{
 class Contract extends Staff{
     private String period;
 
-    Contract(){
+    public Contract(){
         this.read_basic();
         System.out.println("Enter Period respectively");
         Scanner input = new Scanner( System.in );

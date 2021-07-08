@@ -7,28 +7,32 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //StudentInformation a = new StudentInformation();
+        //StudentInformation a = new StudentInformation();              Lab Program 1-A
         //a.studentInformationMain();
 
-        //Stacks b = new Stacks();
+        //Stacks b = new Stacks();                                      Lab Program 1-B
         //b.stacksMain();
 
-        //StaffInformation c = new StaffInformation();
+        //StaffInformation c = new StaffInformation();                  Lab Program 2-A
         //c.StaffInformationMain();
 
-        //MergeSortAlgo d = new MergeSortAlgo();
-        //d.MergeSortMain();
+        //QuickSortAlgo d = new QuickSortAlgo();                        Lab Program  4
+        //d.QuickSortMain();
 
-        //array e = new array();
-        //e.driver();
+        //MergeSortAlgo e = new MergeSortAlgo();                        Lab Program  5
+        //e.MergeSortMain();
 
-        //QuickSortAlgo f = new QuickSortAlgo();
-        //f.QuickSortMain();
+        //KnapsackAlgo f = new KnapsackAlgo();                          Lab Program  6
+        //f.KnapsackMain();
 
-        //KnapsackAlgo g = new KnapsackAlgo();
-        //g.KnapsackMain();
+        //DijkstraAlgo g = new DijkstraAlgo();                            //Lab Program 7
+        //g.DijkstraMain();
 
+        KruskalAlgo h = new KruskalAlgo();
+        h.KruskalMain();
 
+        //array extra = new array();
+        //extra.driver();
 
     }
 }
