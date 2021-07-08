@@ -10,13 +10,13 @@ class Kruskal{
     int minimumCost;
     int[] parentVertex;
 
-    Kruskal(){
+    public Kruskal(){
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the number of vertex : ");
         vertex = input.nextInt();
 
         costAdjacencyMatrix = new int[vertex+1][vertex+1];
-        minimumCostEdge = new int[vertex+1][vertex+1];
+        minimumCostEdge = new int[vertex+1][3];
         parentVertex = new int[vertex+1];
         minimumCost = 0;
     }
