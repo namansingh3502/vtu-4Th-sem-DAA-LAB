@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class Kruskal{
 
-    int vertex;
+    int vertex,edges;
     int[][] costAdjacencyMatrix;
     int[][] minimumCostEdge;
     int minimumCost;
@@ -14,25 +14,40 @@ class Kruskal{
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the number of vertex : ");
         vertex = input.nextInt();
+        System.out.print("Enter the number of edges : ");
+        edges = input.nextInt();
 
         costAdjacencyMatrix = new int[vertex+1][vertex+1];
         minimumCostEdge = new int[vertex+1][3];
         parentVertex = new int[vertex+1];
         minimumCost = 0;
-    }
 
-    public void read(){
-        Scanner input = new Scanner( System.in );
         for( int i = 1; i <= vertex; i++ ){
-            for( int j = 0; j <= vertex; j++ ){
-                costAdjacencyMatrix[i][j] = input.nextInt();
+            for( int j = 1; j <= vertex; j++ ){
+                if( i == j ) costAdjacencyMatrix[i][j] = 0;
+                else costAdjacencyMatrix[i][j] = 9999;
             }
         }
     }
 
+    public void read(){
+        Scanner input = new Scanner(System.in);
+        int u,v,cost;
+
+        System.out.println("Enter the edges as u, v and cost respectively : ");
+        for( int i = 0; i < edges; i++ ){
+            u = input.nextInt();
+            v = input.nextInt();
+            cost = input.nextInt();
+
+            costAdjacencyMatrix[u][v] = costAdjacencyMatrix[v][u] = cost;
+        }
+    }
+
     public int find(int i){
-        while(parentVertex[i] != 0 )
+        while(parentVertex[i] != 0 ) {
             i = parentVertex[i];
+        }
         return i;
     }
 
@@ -67,14 +82,14 @@ class Kruskal{
                 minimumCostEdge[edgeCount][2] = v;
                 minimumCost += costAdjacencyMatrix[u][v];
             }
-            costAdjacencyMatrix[a][b] = costAdjacencyMatrix[b][a] = Integer.MAX_VALUE;
+            costAdjacencyMatrix[u][v] = costAdjacencyMatrix[v][u] = Integer.MAX_VALUE;
         }
     }
 
     public void display(){
         System.out.println("Edges in minimum cost spanning tree are : ");
-        for( int i = 1; i <= vertex; i++ ){
-            System.out.println( minimumCostEdge[i][1]  + " --> " + minimumCostEdge[i][2] );
+        for( int i = 1; i < vertex; i++ ){
+            System.out.println( minimumCostEdge[i][1]  + " -- " + minimumCostEdge[i][2] );
         }
         System.out.println("Cost of minimum spanning tree is : " + minimumCost );
     }
@@ -83,16 +98,14 @@ class Kruskal{
 public class KruskalAlgo {
 
     void KruskalMain(){
-        Scanner input = new Scanner(System.in);
-
         Kruskal kruskal = new Kruskal();
 
-        System.out.println("Enter the Cost adjacency matrix ");
         kruskal.read();
 
         kruskal.operation();
 
         kruskal.display();
+
     }
 
 }

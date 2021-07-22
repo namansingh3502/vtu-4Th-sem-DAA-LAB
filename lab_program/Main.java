@@ -2,6 +2,7 @@ package com.lab_program;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Main {
 
@@ -28,8 +29,26 @@ public class Main {
         //DijkstraAlgo g = new DijkstraAlgo();                            //Lab Program 7
         //g.DijkstraMain();
 
-        KruskalAlgo h = new KruskalAlgo();
-        h.KruskalMain();
+        //KruskalAlgo h = new KruskalAlgo();
+        //h.KruskalMain();
+
+        //PrimsAlgo i = new PrimsAlgo();
+        //i.PrimsMain();
+
+        //StringTokenizerProg j = new StringTokenizerProg();
+        //j.StringTokenizerMain();
+
+        //ExceptionProg k = new ExceptionProg();
+        //k.ExceptionProgMain();
+
+        //FloydWarshallAlgo l = new FloydWarshallAlgo();
+        //l.FloydAlgoMain();
+
+        //MultiThreadingProg m = new MultiThreadingProg();
+        //m.MultiThreadingProgMain();
+
+        DynamicKnapsackAlgo n = new DynamicKnapsackAlgo();
+        n.DynamicKnapsackAlgoMain();
 
         //array extra = new array();
         //extra.driver();
