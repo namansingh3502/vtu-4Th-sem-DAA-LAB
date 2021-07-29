@@ -96,7 +96,7 @@ class Prims {
 
 public class PrimsAlgo {
 
-    void PrimsMain(){
+    public static void main(String[] args ){
         Prims prims = new Prims();
 
         prims.read();

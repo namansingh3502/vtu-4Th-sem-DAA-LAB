@@ -45,7 +45,7 @@ class Stack{
 
 public class Stacks {
 
-    void stacksMain(){
+    public static void main(String[] args ){
         Scanner input = new Scanner( System.in );
         int size;
 

@@ -60,7 +60,7 @@ class DynamicKnapsack {
     }
 }
 public class DynamicKnapsackAlgo {
-    public static void DynamicKnapsackAlgoMain() {
+    public static void main(String[] args ) {
         DynamicKnapsack dk = new DynamicKnapsack();
         dk.read();
         dk.operation();

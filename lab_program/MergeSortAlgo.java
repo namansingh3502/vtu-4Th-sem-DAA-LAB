@@ -77,7 +77,7 @@ class MergeSort{
 }
 
 public class MergeSortAlgo {
-    void MergeSortMain(){
+    public static void main(String[] args ){
 
         MergeSort mergeSort = new MergeSort();
         mergeSort.read();

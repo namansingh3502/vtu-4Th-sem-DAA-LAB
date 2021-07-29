@@ -46,7 +46,7 @@ class Thread1 extends Thread
 }
 public class MultiThreadingProg {
 
-    public void MultiThreadingProgMain() {
+    public static void main(String[] args ){
 
         Thread1 firstThread = new Thread1();
         Thread t1 = new Thread (firstThread);

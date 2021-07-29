@@ -97,7 +97,7 @@ class Kruskal{
 
 public class KruskalAlgo {
 
-    void KruskalMain(){
+    public static void main(String[] args ){
         Kruskal kruskal = new Kruskal();
 
         kruskal.read();

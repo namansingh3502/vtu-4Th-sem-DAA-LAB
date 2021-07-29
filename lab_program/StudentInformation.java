@@ -29,7 +29,7 @@ class Student{
 
 public class StudentInformation {
 
-    void studentInformationMain(){
+    public static void main(String[] args ){
         Scanner input = new Scanner(System.in);
 
         int n;

@@ -51,7 +51,7 @@ class FloydWarshall{
 
 public class FloydWarshallAlgo {
 
-    public void FloydAlgoMain(){
+    public static void main(String[] args ){
         FloydWarshall floydWarshall = new FloydWarshall();
 
         floydWarshall.read();

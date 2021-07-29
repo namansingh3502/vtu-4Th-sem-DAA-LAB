@@ -71,7 +71,7 @@ class Knapsack{
 
 public class KnapsackAlgo {
 
-    void KnapsackMain() {
+    public static void main(String[] args ) {
         Knapsack knapsack = new Knapsack();
         knapsack.read();
         knapsack.operation();

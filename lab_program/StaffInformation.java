@@ -80,7 +80,7 @@ class Contract extends Staff{
 
 public class StaffInformation {
 
-    void StaffInformationMain() {
+    public static void main(String[] args ){
         Scanner input = new Scanner( System.in );
 
         int teaching_staff_count=0, technical_staff_count=0,contract_staff_count=0;

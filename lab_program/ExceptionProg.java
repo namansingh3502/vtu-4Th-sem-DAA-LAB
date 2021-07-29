@@ -3,7 +3,7 @@ package com.lab_program;
 import java.util.Scanner;
 
 public class ExceptionProg {
-    public void ExceptionProgMain(){
+    public static void main(String[] args ){
         Scanner input = new Scanner(System.in);
         int a,b;
         System.out.print("Enter the value of a and b : ");

@@ -27,7 +27,7 @@ class Customer{
     }
 }
 public class StringTokenizerProg {
-    void StringTokenizerMain(){
+    public static void main(String[] args ){
         Customer customer = new Customer();
         Scanner input = new Scanner(System.in);
 

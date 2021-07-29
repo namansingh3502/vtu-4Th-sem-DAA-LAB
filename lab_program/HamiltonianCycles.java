@@ -61,7 +61,7 @@ class Hamiltonian {
 
 class HamiltonianCycles {
 
-    public static void main(String[] args) {
+    public static void main(String[] args ){
 
         Hamiltonian obj = new Hamiltonian();
         obj.display(2);

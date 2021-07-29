@@ -66,7 +66,7 @@ class QuickSort {
 }
 
 public class QuickSortAlgo {
-    void QuickSortMain(){
+    public static void main(String[] args ){
 
         QuickSort quickSort = new QuickSort();
         quickSort.read();

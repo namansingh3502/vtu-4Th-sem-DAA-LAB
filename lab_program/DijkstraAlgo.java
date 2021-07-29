@@ -104,7 +104,7 @@ class Dijkstra{
 
 public class DijkstraAlgo {
 
-    void DijkstraMain(){
+    public static void main(String[] args ){
         Scanner input = new Scanner(System.in);
 
         Dijkstra dijkstra = new Dijkstra();
