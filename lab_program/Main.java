@@ -47,8 +47,10 @@ public class Main {
         //MultiThreadingProg m = new MultiThreadingProg();
         //m.MultiThreadingProgMain();
 
-        DynamicKnapsackAlgo n = new DynamicKnapsackAlgo();
-        n.DynamicKnapsackAlgoMain();
+        //DynamicKnapsackAlgo n = new DynamicKnapsackAlgo();
+        //n.DynamicKnapsackAlgoMain();
+
+
 
         //array extra = new array();
         //extra.driver();
